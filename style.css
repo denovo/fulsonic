@@ -1,0 +1,46 @@
+/*
+
+Theme Name: Halfcreative
+Theme URI: http://themeforest.net
+Description: Halfcreative theme.
+Version: 1.0.2
+Author: bitfade
+Author URI: http://themeforest.net/user/bitfade
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: photoblogging
+
+*/
+
+/*alignment inside post page content*/
+	.alignright,
+	.alignleft,
+	.aligncenter,
+	.sticky,
+	.wp-caption-text,
+	.wp-caption,
+	.bypostauthor,
+	.gallery-caption{
+		
+	}
+	
+	.alignright{
+		float:right;
+		clear:right;
+		margin-left:20px;
+		margin-bottom:10px;
+	}
+	
+	.alignleft{
+		float:left;
+		clear:left;
+		margin-right:20px;
+		margin-bottom:10px;
+	}
+	
+	.aligncenter{
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:10px;
+	}
+	

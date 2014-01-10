@@ -1,0 +1,15 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">project</custom-type>
+		<custom-type translate="1">caption</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+        <custom-type translate="0">gallery</custom-type>
+        <custom-type translate="0">video</custom-type>		
+    </custom-types>    
+    <taxonomies>
+		<taxonomy translate="1">prj-category</taxonomy>
+        <taxonomy translate="0">media-tags</taxonomy>
+    </taxonomies>    
+</wpml-config>
+
+

@@ -1,0 +1,417 @@
+
+/*
+
+	00. Font Face
+	01. Key Frames fade in
+	02. Media Queries MAX WIDTH 1024px
+	03. Media Queries MAX WIDTH 960px
+	04. Media Queries MAX WIDTH 720px
+	05. Media Queries MAX WIDTH 520px
+	06. Media Queries for Smartphones
+	07. Media Queries for Portraits
+	08. Media Queries for Works Grid
+	09. Mobile Navigation Queries
+	
+	
+*/
+
+
+
+/* 00. FONT FACE ================================================== */
+
+
+	/*removed - loaded google web fonts instead*/
+
+
+/* 01. KEY FRAMES FADE IN ================================================== */
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+ 
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+
+
+
+/* ISOTOP IS THERE FOR SOFT TRANSITIONS BETWEEN WORKS */
+
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}      
+
+
+
+/* 02. MAX WIDTH 1024px ================================================== */
+
+@media screen and (max-width: 1024px) {
+
+nav #logo {
+	float:left;
+	display:inline-block;
+	margin-left:0px;
+	letter-spacing:2px;
+	padding:20px 20px 20px 10px;
+	line-height:20px;
+	vertical-align:middle;
+}
+}
+
+
+
+/* 03. MAX WIDTH 960px ================================================== */
+
+
+
+@media screen and (max-width: 960px) {
+
+header {
+	background:transparent;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+	
+.roles {
+    font-size: 20pt;  
+}
+
+
+#twitterwrap {
+	padding:30px 50px 30px;}
+
+#ticker ul.tweet_list {
+height:19px;
+font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+		font-size:12px;
+}
+
+ticker .tweet_list li {
+overflow:hidden;
+vertical-align:middle;
+font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+		font-size:12px;
+color:#666;
+height:30px;
+}
+
+.lead {
+	padding:20px 30px 10px 30px;
+	font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+		font-size:18px;}
+	
+	
+}
+
+/* 04. MAX WIDTH 720px ================================================== */
+
+
+@media screen and (max-width: 720px) {
+header {
+	background:transparent;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+.roles {
+    font-size:  20pt;  
+}
+
+}
+
+
+/* 05. MAX WIDTH 520px ================================================== */
+
+
+@media screen and (max-width: 520px) {
+
+	
+header {
+	background:transparent;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+
+.lead {
+	padding:10px 30px 10px 30px;
+	font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+		font-size:15px;}
+
+
+section.contact .row .col1 {
+	width:90%;}
+
+section.contact .row .col2 {
+	width:90%;
+	margin-top:30px;
+	text-align: center;}
+
+section.contact .inner blockquote p{
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+		font-size:14px;
+}
+
+section.contact .inner form input[type="text"],
+section.contact .inner form input[type="email"],
+section.contact .inner form textarea {
+	width:95%;
+}
+
+
+section.contact .inner form .submit {
+	width:100%;}
+
+footer {
+	font-size:9px;}
+	
+}
+
+/* 06. Smartphones (landscape) ================================================== */
+
+
+@media only screen 
+and (max-device-width : 550px) 
+and (orientation : landscape) {
+header {
+	height:100%;
+}
+
+
+#tab a,
+.android #tab a{
+	padding:10px;}
+
+header h1 {
+	margin-top:5%;}
+#wrapper {
+	position:absolute;
+	width:100%;}
+section.about .inner h2,
+section.contact .inner h2,
+section.portfolio .inner h2 {
+		font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+	}
+
+
+}
+
+/* 06. Smartphones (portraits) ================================================== */
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px)
+and (orientation : portrait) {
+header {
+	/*height:417px;*/
+}
+#wrapper {
+	position:absolute;
+	/*top:417px;*/
+	width:100%;}
+
+#tab a{
+	position:absolute;
+	/*bottom:-60px;*/}
+	
+header h1 {
+	font-size:30pt;}
+section.about .inner h2,
+section.contact .inner h2,
+section.portfolio .inner h2 {
+		font-family: 'Open Sans', arial, sans-serif;
+		font-weight:300;
+	}
+}
+
+/* 06. iPads (landscape) ----------- */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* 06. iPads (portrait) ----------- */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+header h1 {
+	margin-top:45%;}
+}
+
+/* 06. iPhone 4 ----------- */
+
+/* @media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+header h1 {
+	margin-top:50%;}
+}
+
+*/
+
+
+/* 07. PORTRAITS Media Queries ================================================== */
+
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #portraits li{
+    width: 31%;
+    padding-top: 0%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #portraits li{
+    width: 46%;
+    padding-top: 0%;
+    margin-bottom: 4%;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #portraits li{
+    width: 75%;
+    padding-top: 0%;
+    margin-bottom: 5%;
+  }
+}
+
+
+/* 08. WORKS GRID Media Queries ================================================== */
+
+
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+	.og-expander h3 { font-size: 32px; }
+	.og-expander p { font-size: 13px; }
+	.og-expander a { font-size: 12px; }
+	.og-fullimg { margin-top:2%; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+	.og-fullimg { display: none; }
+	.og-details { float: none; width: 100%; }
+	.og-close {right:45%; top:10px; display: none; }
+	.og-details h3 {padding-top: 50px;}
+	.og-expander-inner {padding-top:10px; }  
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.og-fullimg { display: none; }
+	.og-details { float: none; width: 100%; }
+	.og-close {right:45%; top:10px; display: none; }
+	.og-details h3 {padding-top: 50px; }
+	.og-expander-inner {padding-top:10px; }  
+
+}
+
+
+/* 09. Mobile Navigation Queries ================================================== */ 
+
+@media screen and (max-width: 650px) {
+
+	nav #logo {
+	float:left;
+	display:inline-block;
+	margin-left:0px;
+	padding:15px 20px 10px 10px;
+	vertical-align:middle;
+	}
+
+	nav ul li {
+		display: none;
+		}
+	
+	nav select text {color:red;}
+
+	nav select {
+      display: block;
+		background: url('../images/nav-icon.png') no-repeat  ;
+		width: 30px;
+		border: none;
+		height: 30px;
+		display: inline-block;
+		right: 15px;
+		top: 10px;
+		color: rgba(0, 0, 0, 0.0);
+    }
+
+}	
+	
