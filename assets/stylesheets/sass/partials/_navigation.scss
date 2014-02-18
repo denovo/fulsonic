@@ -1,25 +1,3 @@
-.offcanvas-top {
-	position: relative;
-	overflow: hidden;
-	height: 3.2em;
-	@extend %nav-slide-transition;
-	// background-color: $dark-gray;
-	background-color: rgba(0,0,0,0.8);
-	z-index: 2;
-}
-
-.offcanvas-top.active {
-	height: 13.6em;
-}
-
-.o-content {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  padding: 1em 1em 2.5em;
-  
-}
-
 nav.main-nav {
 	position: fixed;
 	top: 0;
