@@ -1,0 +1,73 @@
+{% block content %}
+
+
+	
+
+<!-- Top / Frontpage content - main logo and showreel in background -->
+<header class="full-height" id="slate-1">
+	
+	<nav class="main-nav">
+		<a id="main-nav-toggle" class="main-nav-link" href="#">
+            <!-- <span class="si-icon si-icon-hamburger" data-icon-name="hamburger"></span> -->
+            <span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+            <!-- <i id="nav-icon" class="fa fa-bars fa-fw "></i> -->
+
+        </a>
+	</nav>
+
+	<div class="player-controls">
+        
+        <span id="btn-vol-mute" class="si-icon si-icon-volume volume-off" data-icon-name="volume"></span>
+        <span id="btn-play-pause" class="si-icon si-icon-play si-icon-reverse pause" data-icon-name="play"></span>
+       
+        <!-- <i id="btn-vol-mute" class="fa fa-volume-off fa-fw "></i> -->
+     
+       <!--  <i id="btn-play-pause" class="fa fa-pause fa-fw"></i> --> 
+		
+	</div>
+	<div class="logo-container">
+		{{ "fulsonic-logo400.png" | asset_url | image_tag }}
+	</div>
+
+    <div id="interested-tab" class="cta-content-link fade-in">
+        <a href="#portfolio" class="btn--homepage">INTERESTED?</a>
+    </div>
+    
+</header>
+
+
+
+<section class="full-height" id="slate-2">
+    two goes here
+    <a class="btn--darkbg test-popup-link" href="http://placekitten.com/g/1800/1000">Open popup</a>
+
+</section>
+
+<section class="full-height" id="slate-3">
+	<a class="btn--lightbg test-popup-link" href="http://placekitten.com/g/1800/1000">Open popup</a>
+	Page three goes here
+</section>
+
+<section class="full-height" id="slate-4">
+    Page three goes here
+</section>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block scripts %} 
+
+{% endblock %}

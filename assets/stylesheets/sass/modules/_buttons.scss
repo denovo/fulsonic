@@ -1,0 +1,56 @@
+// global button styling
+.btn {
+	display: inline-block;
+	text-align: left;
+	width: 150px;
+	padding: 5px 10px;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+	color: $slate;
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid $bright-blue;
+	
+	@extend %default-transition;
+
+	&:hover, &:active {
+		color: white;
+		background: $bright-blue;
+	}
+	
+}
+
+// buttons for light backgrounds
+.btn--lightbg {
+	@extend .btn;
+	color: $slate;
+}
+
+// buttons for dark backgrounds
+.btn--darkbg {
+	@extend .btn;
+	color: white;
+}
+
+
+
+
+
+// page specific buttons
+
+.btn--homepage {
+	@extend .btn--lightbg;
+	display: block;
+	width: 210px;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border: 3px solid $bright-blue;
+	padding: 12px 0;
+	color: white;
+}
+
+

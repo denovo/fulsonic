@@ -33,6 +33,10 @@ wp-config.php
 /assets/video/
 
 
+# Bower Components #
+####################
+/assets/app/bower_components/
+
 # Built HTML #
 ################
 /converted-html/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}Fulsonic{% endblock %}</title>
+        
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <!-- Styles -->
+        <!-- {{ "slidebars.css" | asset_url | stylesheet_tag }} -->
+        {{ "magnific-popup.css" | asset_url | stylesheet_tag }}
+        {{ "master.css" | asset_url | stylesheet_tag }}
+        
+
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+        <!-- include JS libs -->
+        {{ "modernizr.min.js" | asset_url | script_tag }}
+        {{ "snap.svg-min.js" | asset_url | script_tag }}
+
+        <!-- fonts from TypeCast -->
+       <script type="text/javascript" src="http://typecast.com/project_css/HpF9ZZ4p6K/1370623e03230a.js"></script> 
+
+        
+
+    </head>
+    <body>
+      <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+       
+        <div class="offcanvas-top">
+            <div class="o-content">
+                <p>Here is more content. This could be related items, navigation or other content you feel is conducive to this type of treatment.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisi et dui placerat ornare. Maecenas molestie lacus lobortis libero lacinia sed scelerisque lectus congue. Mauris dignissim nisi a ante laoreet et ullamcorper ligula ullamcorper. In hac habitasse platea dictumst. In nisi odio, tempor in viverra vitae, mollis ac tortor. Sed a rhoncus leo. Maecenas ac dui elit, tristique dapibus nisl. Suspendisse feugiat porta ligula, auctor posuere lorem vulputate et.</p>
+            </div>
+        </div>
+        <div id="wrapper">
+            <!-- Include -->
+            {% include "header" %}
+            <!-- Content block, child page inject content -->
+            {% block content %}{% endblock %}
+        </div>
+        
+        
+        <!-- BigVideo Dependencies -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+        {{ "jquery-ui.min.js" | asset_url | script_tag }}
+        <script src="//vjs.zencdn.net/4.3/video.js"></script>
+        <!-- BigVideo -->
+        {{ "bigvideo.js" | asset_url | script_tag }}
+        {{ "magnific-popup.js" | asset_url | script_tag }}
+        <!-- {{ "slidebars.js" | asset_url | script_tag }} -->
+        {{ "waypoints.js" | asset_url | script_tag }}
+        {{ "svgicons-config.js" | asset_url | script_tag }}
+        {{ "svgicons.js" | asset_url | script_tag }}
+        <script type="text/javascript">
+            
+                // initialize all
+                
+                // [].slice.call( document.querySelectorAll( '.si-icon' ) ).forEach( function( el ) {
+                //     var svgicon = new svgIcon( el, svgIconConfig );
+                // } );
+
+                new svgIcon( document.querySelector( 'nav .si-icon-hamburger-cross' ), svgIconConfig, { speed: 200, } );
+
+                var volIcon = new svgIcon( document.querySelector('.player-controls > .si-icon-volume'), svgIconConfig, { speed: 200, } );
+
+                var playIcon = new svgIcon( document.querySelector('.player-controls > .si-icon-play'), svgIconConfig, { 
+                    speed: 200
+                    // onLoad : function() {
+                    //     // document.getElementById('slate-1').addEventListener( "mouseout", function() {
+                    //     //     playIcon.toggled = false;
+                    //     //     console.log('we should have reset the play icon to play');
+                    //     // } );
+                    });
+
+        </script>
+
+        {{ "app.js" | asset_url | script_tag }}
+        
+        
+
+        <!-- Script block allowing child pages to inject their own scripts -->
+        {% block scripts %}{% endblock %}
+    </body>
+</html>

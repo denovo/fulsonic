@@ -1,0 +1,31 @@
+header, section {
+	@include outer-container;
+}
+%slate-padding { 
+	padding-top: 6em;
+ 	padding-bottom: 6em;
+ }
+
+.full-height { width:100%;  }
+
+
+
+section#slate-1 { 
+	@extend %slate-padding;
+	background-color:$white;
+}
+
+section#slate-2 { 
+	@extend %slate-padding;
+	background-color:$dark-gray; 
+}
+
+section#slate-3 { 
+	@extend %slate-padding;
+	background-color:$white; 
+}
+
+section#slate-4 { 
+	@extend %slate-padding;
+	background-color:$dark-gray; 
+}

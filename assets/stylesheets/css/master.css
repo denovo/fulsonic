@@ -1,0 +1,437 @@
+/* [sass, assets/stylesheets/sass, master.scss] */
+/* line 2, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 11, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/neat/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(0, #eeeeee), color-stop(6.17215%, #eeeeee), color-stop(6.17215%, rgba(0, 0, 0, 0)), color-stop(8.5298%, rgba(0, 0, 0, 0)), color-stop(8.5298%, #eeeeee), color-stop(14.70196%, #eeeeee), color-stop(14.70196%, rgba(0, 0, 0, 0)), color-stop(17.05961%, rgba(0, 0, 0, 0)), color-stop(17.05961%, #eeeeee), color-stop(23.23176%, #eeeeee), color-stop(23.23176%, rgba(0, 0, 0, 0)), color-stop(25.58941%, rgba(0, 0, 0, 0)), color-stop(25.58941%, #eeeeee), color-stop(31.76157%, #eeeeee), color-stop(31.76157%, rgba(0, 0, 0, 0)), color-stop(34.11922%, rgba(0, 0, 0, 0)), color-stop(34.11922%, #eeeeee), color-stop(40.29137%, #eeeeee), color-stop(40.29137%, rgba(0, 0, 0, 0)), color-stop(42.64902%, rgba(0, 0, 0, 0)), color-stop(42.64902%, #eeeeee), color-stop(48.82117%, #eeeeee), color-stop(48.82117%, rgba(0, 0, 0, 0)), color-stop(51.17883%, rgba(0, 0, 0, 0)), color-stop(51.17883%, #eeeeee), color-stop(57.35098%, #eeeeee), color-stop(57.35098%, rgba(0, 0, 0, 0)), color-stop(59.70863%, rgba(0, 0, 0, 0)), color-stop(59.70863%, #eeeeee), color-stop(65.88078%, #eeeeee), color-stop(65.88078%, rgba(0, 0, 0, 0)), color-stop(68.23843%, rgba(0, 0, 0, 0)), color-stop(68.23843%, #eeeeee), color-stop(74.41059%, #eeeeee), color-stop(74.41059%, rgba(0, 0, 0, 0)), color-stop(76.76824%, rgba(0, 0, 0, 0)), color-stop(76.76824%, #eeeeee), color-stop(82.94039%, #eeeeee), color-stop(82.94039%, rgba(0, 0, 0, 0)), color-stop(85.29804%, rgba(0, 0, 0, 0)), color-stop(85.29804%, #eeeeee), color-stop(91.4702%, #eeeeee), color-stop(91.4702%, rgba(0, 0, 0, 0)), color-stop(93.82785%, rgba(0, 0, 0, 0)), color-stop(93.82785%, #eeeeee), color-stop(100.0%, #eeeeee), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.17215%, rgba(0, 0, 0, 0) 6.17215%, rgba(0, 0, 0, 0) 8.5298%, #eeeeee 8.5298%, #eeeeee 14.70196%, rgba(0, 0, 0, 0) 14.70196%, rgba(0, 0, 0, 0) 17.05961%, #eeeeee 17.05961%, #eeeeee 23.23176%, rgba(0, 0, 0, 0) 23.23176%, rgba(0, 0, 0, 0) 25.58941%, #eeeeee 25.58941%, #eeeeee 31.76157%, rgba(0, 0, 0, 0) 31.76157%, rgba(0, 0, 0, 0) 34.11922%, #eeeeee 34.11922%, #eeeeee 40.29137%, rgba(0, 0, 0, 0) 40.29137%, rgba(0, 0, 0, 0) 42.64902%, #eeeeee 42.64902%, #eeeeee 48.82117%, rgba(0, 0, 0, 0) 48.82117%, rgba(0, 0, 0, 0) 51.17883%, #eeeeee 51.17883%, #eeeeee 57.35098%, rgba(0, 0, 0, 0) 57.35098%, rgba(0, 0, 0, 0) 59.70863%, #eeeeee 59.70863%, #eeeeee 65.88078%, rgba(0, 0, 0, 0) 65.88078%, rgba(0, 0, 0, 0) 68.23843%, #eeeeee 68.23843%, #eeeeee 74.41059%, rgba(0, 0, 0, 0) 74.41059%, rgba(0, 0, 0, 0) 76.76824%, #eeeeee 76.76824%, #eeeeee 82.94039%, rgba(0, 0, 0, 0) 82.94039%, rgba(0, 0, 0, 0) 85.29804%, #eeeeee 85.29804%, #eeeeee 91.4702%, rgba(0, 0, 0, 0) 91.4702%, rgba(0, 0, 0, 0) 93.82785%, #eeeeee 93.82785%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1; }
+
+/* line 2, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_buttons.scss */
+.btn, .btn--lightbg, .btn--homepage, .btn--darkbg {
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  padding: 5px 10px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  color: #2c3e50;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #00aed7; }
+  /* line 18, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_buttons.scss */
+  .btn:hover, .btn--lightbg:hover, .btn--homepage:hover, .btn--darkbg:hover, .btn:active, .btn--lightbg:active, .btn--homepage:active, .btn--darkbg:active {
+    color: white;
+    background: #00aed7; }
+
+/* line 26, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_buttons.scss */
+.btn--lightbg, .btn--homepage {
+  color: #2c3e50; }
+
+/* line 32, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_buttons.scss */
+.btn--darkbg {
+  color: white; }
+
+/* line 43, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_buttons.scss */
+.btn--homepage {
+  display: block;
+  width: 210px;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 3px solid #00aed7;
+  padding: 12px 0;
+  color: white; }
+
+/* line 1, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_typography.scss */
+body, html {
+  color: #ecf0f1; }
+
+/* line 5, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_typography.scss */
+a {
+  text-decoration: none; }
+
+/*	BigVideo Styles */
+/* line 3, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-wrap {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 4, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-vid, #big-video-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 5, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-container {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s; }
+
+/* line 7, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control {
+  width: 100%;
+  height: 16px;
+  position: relative; }
+
+/* line 8, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-middle {
+  margin: 0 56px 0 24px; }
+
+/* line 9, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-bar {
+  width: 100%;
+  height: 16px;
+  position: relative;
+  cursor: pointer; }
+
+/* line 10, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-progress {
+  position: absolute;
+  top: 7px;
+  height: 3px;
+  width: 0%;
+  background: #fff; }
+
+/* line 11, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-track {
+  position: absolute;
+  top: 8px;
+  height: 1px;
+  width: 100%;
+  background: #fff; }
+
+/* line 12, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-bound-left {
+  left: 0; }
+
+/* line 13, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-bound-right {
+  right: -1px; }
+
+/* line 14, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-track .ui-slider-handle {
+  opacity: 0; }
+
+/* line 15, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-playhead {
+  left: 30%; }
+
+/* line 16, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-image: url("bigvideo.png"); }
+
+/* line 17, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-timer {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  color: #fff;
+  font-size: 11px; }
+
+/* line 18, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control-playhead, #big-video-control-bound-left, #big-video-control-bound-right {
+  position: absolute;
+  top: 0;
+  height: 16px;
+  width: 1px;
+  background: #fff; }
+
+/* line 19, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+#big-video-control .ui-slider-handle {
+  border-left: solid 1px #fff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -8px; }
+
+/* line 20, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+.transparent {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0; }
+
+/* line 21, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+.vjs-big-play-button {
+  display: none !important; }
+
+/* line 23, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+.vjs-paused {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAjBAMAAACX02ymAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NTFCMjQ5RjhFQUQxMUUzQjNBREYxMjcwRDA1RDIwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NTFCMjRBMDhFQUQxMUUzQjNBREYxMjcwRDA1RDIwRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY4RUU2NjE0OEVBQzExRTNCM0FERjEyNzBEMDVEMjBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY1MUIyNDlFOEVBRDExRTNCM0FERjEyNzBEMDVEMjBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+3U/szgAAABJQTFRFAK7X////AK7XAK7XAK7XAK7X0YrzcgAAAAZ0Uk5TAAAiXJa445qh0gAAAGpJREFUKM990csRgCAMBNDYAc7onRJiC7QQ038rgghmOWxu77B8srLHSXJkmbMlOQ3pBemKvDPQDTnig198sscne/znGw9s8cgaj6xxoBekX4yFHLVcpOSRxj6oZDnGFqukFKxsKXSpG/kA3rVGcCXM/3wAAAAASUVORK5CYII=), default; }
+
+/* line 25, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_bg-video.scss */
+.vjs-playing {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeAgMAAACgd411AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGOEVFNjYxMjhFQUMxMUUzQjNBREYxMjcwRDA1RDIwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGOEVFNjYxMzhFQUMxMUUzQjNBREYxMjcwRDA1RDIwRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkY4RUU2NjEwOEVBQzExRTNCM0FERjEyNzBEMDVEMjBGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4RUU2NjExOEVBQzExRTNCM0FERjEyNzBEMDVEMjBGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0YIicgAAAAlQTFRFAK7X////AK7XiladFAAAAAN0Uk5TAACzqB4m6AAAABlJREFUCNdjCAWDEIaoVSsYtFYtGbY01J8AXltcld2w/J8AAAAASUVORK5CYII=), default; }
+
+/* line 1, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.si-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center; }
+
+/* Fallback for browsers that don't support SVG - Generated with http://iconizr.com/ */
+/* line 17, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-clock {
+  background-image: url("../png/clock.png"); }
+
+/* line 18, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-contract {
+  background-image: url("../png/contract.png"); }
+
+/* line 19, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-down-arrow {
+  background-image: url("../png/down-arrow.png"); }
+
+/* line 20, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-equalizer {
+  background-image: url("../png/equalizer.png"); }
+
+/* line 21, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-flag {
+  background-image: url("../png/flag.png"); }
+
+/* line 22, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-glass-empty {
+  background-image: url("../png/glass.png"); }
+
+/* line 23, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross {
+  background-image: url("../png/hamburger.png"); }
+
+/* line 24, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-hourglass {
+  background-image: url("../png/hourglass.png"); }
+
+/* line 25, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-mail {
+  background-image: url("../png/mail.png"); }
+
+/* line 26, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-maximize, .no-svg .si-icon-maximize-rotate {
+  background-image: url("../png/maximize.png"); }
+
+/* line 27, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-monitor {
+  background-image: url("../png/monitor.png"); }
+
+/* line 28, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-nav-left-arrow {
+  background-image: url("../png/nav-left-arrow.png"); }
+
+/* line 29, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-nav-up-arrow {
+  background-image: url("../png/nav-up-arrow.png"); }
+
+/* line 30, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-lock {
+  background-image: url("../png/padlock.png"); }
+
+/* line 31, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-play {
+  background-image: url("../png/play.png"); }
+
+/* line 32, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-plus, .no-svg .si-icon-plus-cross {
+  background-image: url("../png/plus.png"); }
+
+/* line 33, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-right-arrow {
+  background-image: url("../png/right-arrow.png"); }
+
+/* line 34, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-smiley {
+  background-image: url("../png/smiley.png"); }
+
+/* line 35, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-trash {
+  background-image: url("../png/trash.png"); }
+
+/* line 36, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-volume {
+  background-image: url("../png/volume.png"); }
+
+/* line 37, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_svg-icons.scss */
+.no-svg .si-icon-zoom {
+  background-image: url("../png/zoom.png"); }
+
+/* line 3, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_transitions.scss */
+.btn, .btn--lightbg, .btn--homepage, .btn--darkbg {
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s; }
+
+/* line 7, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/modules/_transitions.scss */
+.offcanvas-top {
+  -webkit-transition: height, 0.3s;
+  transition: height, 0.3s; }
+
+/* line 1, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_header.scss */
+header {
+  background: #313437 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100%;
+  min-height: 100%; }
+
+/* line 15, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_header.scss */
+.cta-content-link {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -105px; }
+
+/* line 1, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_general.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
+  max-width: 100%; }
+
+/* line 7, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_general.scss */
+img {
+  max-width: 100%; }
+
+/* line 9, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_general.scss */
+i {
+  font-size: 18px; }
+
+/* line 1, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+header, section {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 18, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/bourbon/addons/_clearfix.scss */
+  header:before, header:after, section:before, section:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/bourbon/addons/_clearfix.scss */
+  header:after, section:after {
+    clear: both; }
+
+/* line 4, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+section#slate-1, section#slate-2, section#slate-3, section#slate-4 {
+  padding-top: 6em;
+  padding-bottom: 6em; }
+
+/* line 9, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+.full-height {
+  width: 100%; }
+
+/* line 13, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+section#slate-1 {
+  background-color: #ecf0f1; }
+
+/* line 18, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+section#slate-2 {
+  background-color: #313437; }
+
+/* line 23, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+section#slate-3 {
+  background-color: #ecf0f1; }
+
+/* line 28, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_main.scss */
+section#slate-4 {
+  background-color: #313437; }
+
+/* line 1, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.offcanvas-top {
+  position: relative;
+  overflow: hidden;
+  height: 3.2em;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2; }
+
+/* line 11, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.offcanvas-top.active {
+  height: 13.6em; }
+
+/* line 15, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.o-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1em 1em 2.5em; }
+
+/* line 23, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+nav.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  color: white;
+  z-index: 3;
+  cursor: pointer; }
+
+/* line 35, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.player-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.2em 0.4em;
+  color: white;
+  z-index: 3;
+  cursor: pointer; }
+
+/* line 2, /Users/mac/Dropbox/Pete-Projects/fulsonic/assets/stylesheets/sass/partials/_homepage.scss */
+.logo-container img {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 75%;
+  margin-top: -52px; }
+
+/** Notes
+
+Bourbon have a clearfix in bourbon/addons. just use @include clearfix;
+
+**/
+
