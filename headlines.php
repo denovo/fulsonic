@@ -6,6 +6,8 @@
 <?php else: ?>
 <header>
 <?php endif; ?>
+	
+	<div class="float-over-bg">
 	<a id="home"></a>
 	
 	<h1 class="fade-in one">
@@ -22,6 +24,7 @@
 			<?php endforeach; ?>
 			<?php endif; ?>
 		</div>
+	</div>
 	</div>
 </header>
 

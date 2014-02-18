@@ -44,7 +44,10 @@
 
 		<?php $template = is_page() ? $t->content->pageTemplate() : false; ?>
 		<?php if ($template === "page-home.php"): ?>
-		<?php get_template_part("headlines"); ?>
+			<!-- <iframe id="bgiframe" src="http://player.vimeo.com/video/59609578?portrait=0&amp;badge=0&amp;player=0&amp;autoplay=1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>  -->
+			
+			<?php get_template_part("headlines"); ?>
+
 		<div id="wrapper">
 		<?php else: ?>
 		<div>

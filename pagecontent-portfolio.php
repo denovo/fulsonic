@@ -5,10 +5,11 @@
 <?php $meta =& $content->meta(); ?>
 
 <section class="portfolio" id="<?php $content->slug(); ?>">
+	
 	<div class="inner">
+		
 		<h2><?php $content->title(); ?>
-	    <i class="title_line"></i> 
-	    test   
+	    <i class="title_line"></i>  
 		</h2>
 		
 		<?php if (!empty($meta->portfolio->subtitle)): ?>
@@ -16,7 +17,7 @@
 		<?php endif; ?>
 
 		<?php if (!post_password_required()): ?>
-		<?php $t->project->portfolio($content->meta()->portfolio,false) ?>
+		<?php $t->project->portfolio($content->meta()->portfolio,true) ?>
 		<?php else: ?>
 		<?php get_template_part("password"); ?>
 		<?php endif; ?>

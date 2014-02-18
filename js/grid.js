@@ -381,11 +381,14 @@ current = this.$item.index();
 var $itemEl = this.$item.children( 'a' ),
 eldata = {
 href : $itemEl.attr( 'href' ),
-largesrc : $itemEl.data( 'largesrc' ),
+	largesrc : $itemEl.data( 'largesrc' ),
 	title : $itemEl.data( 'title' ),
 	link : $itemEl.attr( 'data-link-url' ),
 	label : $itemEl.attr( 'data-link-label' ),
-description : $itemEl.data( 'description' )
+	description : $itemEl.data( 'description' ),
+	videoURL : $itemEl.data( 'video-url' ),
+	videoType : $itemEl.data( 'video-type' ),
+	videoId : $itemEl.data( 'video-id' ),
 };
 	
 this.$title.html( eldata.title );
@@ -405,15 +408,17 @@ if( typeof self.$largeImg != 'undefined' ) {
 self.$largeImg.remove();
 }
 
+
 // preload large image and add it to the preview
 // for smaller screens we don´t display the large image (the media query will hide the fullimage wrapper)
-if( self.$fullimage.is( ':visible' ) ) {
+if( self.$fullimage.is( ':visible' ) && eldata.videoURL =='' ) {
 	this.$loading.show();
 	$( '<img/>' ).load( function() {
 		var $img = $( this );
 		if( $img.attr( 'src' ) === self.$item.children('a').data( 'largesrc' ) ) {
 			self.$loading.hide();
 			self.$fullimage.find( 'img' ).remove();
+			self.$fullimage.find( 'iframe' ).remove();
 			self.$largeImg = $img.fadeIn( 350 );
 			if ($.browser.msie) {
 				self.$largeImg.width("auto").height("auto");				
@@ -421,6 +426,19 @@ if( self.$fullimage.is( ':visible' ) ) {
 			self.$fullimage.append( self.$largeImg );
 		}
 	} ).attr( 'src', eldata.largesrc );	
+}
+
+if( eldata.videoURL != ''){
+	//remove video if in the preview
+	self.$fullimage.find( 'iframe' ).remove();
+	console.log("loading video...");
+	console.log(eldata.videoURL);
+	this.$loading.show();
+	self.$loading.hide();
+	if( eldata.videoType == "youtube" )
+	self.$fullimage.append( '<iframe width="500" height="370" src="//www.youtube.com/embed/'+eldata.videoId+'" frameborder="0" allowfullscreen style="width: 500px; max-height:370px"></iframe>' ).show();
+	if( eldata.videoType == "vimeo" )
+	self.$fullimage.append( '<iframe src="//player.vimeo.com/video/'+eldata.videoId+'" width="500" height="370" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width: 500px; max-height:370px"></iframe>').show();
 }
 
 },

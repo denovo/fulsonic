@@ -63,7 +63,7 @@
 	</div>
 </div>
 <?php if ($isSingle): ?>
-<?php comments_template(); ?>
+<?php // comments_template(); ?>
 <?php endif; ?>
 <?php endwhile; ?>
 <?php if (!$isSingle): ?>

@@ -28,7 +28,19 @@ $social =
 </footer>
 
 </div>
-
+	
 	<?php $t->footer->wp_footer(); ?>
+	<script type="text/javascript" src="http://fulsonic.co.uk/wp-content/themes/halfcreative/js/jquery.hcaptions.js">
+	</script>
+	
+	<script type="text/javascript">
+		// $(window).load(function(){
+		//   $('.hcaption').hcaptions({
+		// 	  effect: "fade",
+		// 	  speed: "200"
+		// 	});
+		// });
+	</script>
+    
     </body>
 </html>

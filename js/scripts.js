@@ -1,28 +1,28 @@
 /* -- TWITTER MAKE IT WORK ( JUST REMPLACE MY USERNAME BY YOURS -- */
-/*
-     jQuery(function($){
-        $("#ticker").tweet({
-          username: "Supview",
-          page: 1,
-          avatar_size: 0,
-          count: 10,
-		  template: "{text}{time}",
-		  filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); },
-          loading_text: "loading ..."
-        }).bind("loaded", function() {
-          var ul = $(this).find(".tweet_list");
-          var ticker = function() {
-            setTimeout(function() {
-              ul.find('li:first').animate( {marginTop: '-30px'}, 500, function() {
-                $(this).detach().appendTo(ul).removeAttr('style');
-              });
-              ticker();
-            }, 5000);
-          };
-          ticker();
-        });
-      });
-*/
+
+    //  jQuery(function($){
+    //     $("#ticker").tweet({
+    //       username: "fulsonic",
+    //       page: 1,
+    //       avatar_size: 0,
+    //       count: 10,
+		  // template: "{text}{time}",
+		  // filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); },
+    //       loading_text: "loading ..."
+    //     }).bind("loaded", function() {
+    //       var ul = $(this).find(".tweet_list");
+    //       var ticker = function() {
+    //         setTimeout(function() {
+    //           ul.find('li:first').animate( {marginTop: '-30px'}, 500, function() {
+    //             $(this).detach().appendTo(ul).removeAttr('style');
+    //           });
+    //           ticker();
+    //         }, 5000);
+    //       };
+    //       ticker();
+    //     });
+    //   });
+
 
 jQuery(function($) {
 /* -- SELECTED CLASS ON SCROLLING -- */
