@@ -29,8 +29,7 @@
         {{ "modernizr.min.js" | asset_url | script_tag }}
         {{ "snap.svg-min.js" | asset_url | script_tag }}
 
-        <!-- fonts from TypeCast -->
-       <script type="text/javascript" src="http://typecast.com/project_css/HpF9ZZ4p6K/1370623e03230a.js"></script> 
+     
 
         
 
@@ -40,12 +39,20 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
        
-        <div class="offcanvas-top">
-            <div class="o-content">
-                <p>Here is more content. This could be related items, navigation or other content you feel is conducive to this type of treatment.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisi et dui placerat ornare. Maecenas molestie lacus lobortis libero lacinia sed scelerisque lectus congue. Mauris dignissim nisi a ante laoreet et ullamcorper ligula ullamcorper. In hac habitasse platea dictumst. In nisi odio, tempor in viverra vitae, mollis ac tortor. Sed a rhoncus leo. Maecenas ac dui elit, tristique dapibus nisl. Suspendisse feugiat porta ligula, auctor posuere lorem vulputate et.</p>
-            </div>
+
+        <!-- menu overlay -->
+        <div class="menu-overlay overlay">
+            <nav>
+                <ul>
+                    <li><a href="#slate-1" class="main-nav-link">Home</a></li>
+                    <li><a href="#slate-2" class="main-nav-link">About</a></li>
+                    <li><a href="#slate-3" class="main-nav-link">Work</a></li>
+                    <li><a href="#slate-4" class="main-nav-link">Clients</a></li>
+                    <li><a href="#slate-5" class="main-nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+
         <div id="wrapper">
             <!-- Include -->
             {% include "header" %}
@@ -66,6 +73,9 @@
         {{ "waypoints.js" | asset_url | script_tag }}
         {{ "svgicons-config.js" | asset_url | script_tag }}
         {{ "svgicons.js" | asset_url | script_tag }}
+        
+        
+
         <script type="text/javascript">
             
                 // initialize all
@@ -90,7 +100,12 @@
         </script>
 
         {{ "app.js" | asset_url | script_tag }}
+        {{ "classie.js" | asset_url | script_tag }}
+        {{ "overlay-menu.js" | asset_url | script_tag }}
         
+
+       <!-- fonts from TypeCast -->
+       <script type="text/javascript" src="http://typecast.com/project_css/HpF9ZZ4p6K/1370623e03230a.js"></script>
         
 
         <!-- Script block allowing child pages to inject their own scripts -->

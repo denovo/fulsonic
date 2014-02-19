@@ -303,7 +303,7 @@ a {
 
 /* line 1, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_header.scss */
 header {
-  background: #313437 no-repeat center center fixed;
+  background: black no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
@@ -380,7 +380,7 @@ nav.main-nav {
   left: 0;
   padding: 0;
   color: white;
-  z-index: 3;
+  z-index: 10;
   cursor: pointer; }
 
 /* line 13, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
@@ -390,9 +390,113 @@ nav.main-nav {
   right: 0;
   padding: 0.2em 0.4em;
   color: white;
-  z-index: 3;
+  z-index: 10;
   cursor: pointer; }
 
+/* Overlay style */
+/* line 30, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 6; }
+
+/* Menu style */
+/* line 41, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* line 51, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative; }
+
+/* line 60, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px; }
+
+/* line 67, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay ul li a {
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+
+/* line 76, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #00aed7; }
+
+/* Effects */
+/* line 81, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+  transition: opacity 0.3s, visibility 0s 0.3s; }
+
+/* line 88, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+/* line 95, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay nav {
+  -webkit-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px; }
+
+/* line 100, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  -ms-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s; }
+
+/* line 108, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg); }
+
+/* line 114, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+.overlay.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  -ms-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg); }
+
+@media screen and (max-height: 30.5em) {
+  /* line 120, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+  .overlay nav {
+    height: 70%;
+    font-size: 34px; }
+
+  /* line 124, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_navigation.scss */
+  .overlay ul li {
+    min-height: 34px; } }
 /* line 2, /Users/mac/Dropbox/htdocs/fulsonic/assets/stylesheets/sass/partials/_homepage.scss */
 .logo-container img {
   overflow: auto;
@@ -410,5 +514,4 @@ nav.main-nav {
 Bourbon have a clearfix in bourbon/addons. just use @include clearfix;
 
 **/
-
 

@@ -91,21 +91,9 @@ $(document).ready(function () {
   	// if on homepage & modern browser, then initialise the BG video, else
   	// show static background image
   	if ($('html').hasClass('video')){
-  		
   		// only show bg_video if not mobile / touch devices 
   		showVideo = (isTouch === false) ? show_bg_video() : $('.player-controls').hide();
     }
-
-
-
- //  	$('.main-nav-link').magnificPopup({ 
-	//   type: 'iframe'
-	// 	// other options
-	// });
-
-
-
-
 
 });
 
